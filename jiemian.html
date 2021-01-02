@@ -1,0 +1,422 @@
+﻿<html>
+	<head>
+		<title>三国杀界面</title>
+		<style>
+			#bg{
+				width:1200px;
+				height:800px;
+				background:url(image/bgfight01.jpg) no-repeat;
+				
+			}
+
+			.outer{
+				width:233px;
+				height:250px;
+				float:left;
+			}
+			.hero1{
+				background:url(jiang/jzhangfei_1200.jpg) no-repeat;
+			}
+			.hero2{
+				background:url(jiang/jcaocao_1200.jpg) no-repeat;
+			}
+			.hero3{
+				background:url(jiang/jguanyu_1200.jpg) no-repeat;
+			}
+			.hero4{
+				background:url(jiang/jzhenji_1200.jpg) no-repeat;
+			}
+			.hero5{
+				background:url(jiang/jzhaoyun_1200.jpg) no-repeat;
+			}
+			.hero6{
+				background:url(jiang/jsunshangxiang_1200.jpg) no-repeat;
+			}
+			.hero7{
+				background:url(jiang/jxiaoqiao_1200.jpg) no-repeat;
+			}
+			#inner{
+				width:229px;
+				height:248px;
+				background:url(image/vaiqu.png) no-repeat;
+				position:relative;
+			}
+			#identify{
+				position:absolute;
+				right:5px;
+				top:10px;
+			}
+			#blood{
+				position:absolute;
+				right:13px;
+				top:70px;
+			}
+			#num{
+				position:absolute;
+				right:16px;
+				bottom:6px;
+				font-size:25px;
+				color:white;
+			}
+			#space{
+				width:100%;
+				height:95px;
+				background:black;
+				clear:both;
+			}
+			#myhero{
+				width:100%;
+				height:190px;
+				
+			}
+			#myhero #left{
+				width:235px;
+				height:190px;
+				background:red;
+				float:left;
+			}
+			#myhero #middle_card{
+				float:left;
+				position:relative;
+				width:740px;
+			}
+			#myhero #middle_card .cardouter{
+				width:140px;
+				height:188px;
+				position:absolute
+			}
+			.card1{
+				left:0px;
+				top:0px;
+			}
+			.card2{
+				left:80px;
+				top:0px;
+			}
+			.card3{
+				left:160px;
+				top:0px;
+			}
+			.card4{
+				left:240px;
+				top:0px;
+			}
+			#myhero #middle_card .cardinner{
+				width:140px;
+				height:188px;
+				background:url(card/ktao.png) no-repeat;
+				background-size:100% 100%;
+				position:relative
+			}
+			#myhero #middle_card .cardinner #card_type{
+				position:absolute;
+				left:8px;
+				top:10px;
+				
+			}
+			#myhero #middle_card .cardinner #card_num{
+				width:12px;		
+				height:12px;
+				font-size:20px;
+				position:absolute;
+				left:12px;
+				top:30px;
+			}
+			#myhero #right{
+				float:right;
+				width:233px;
+				height:188px;
+				background:url(jiang/jhuatuo_1200.jpg) no-repeat;
+			}
+			#myhero #right #hero_border{
+				width:266px;
+				height:220px;
+				background:url(image/vp1qu.png) no-repeat;
+				background-size:100% 100%;
+				margin-top:-20px;
+				margin-left:-20px;
+				position:relative;
+			}
+			#myhero #right #hero_border #hero_identity{
+				position:absolute;
+				right:35px;
+				top:40px;
+			}
+			#myhero #right #hero_border #hero_blood{
+				position:absolute;
+				right:40px;		
+				top:90px;
+			}
+			#myhero #right #hero_border .skill{
+				position:absolute;
+				width:58px;
+				height:90px;
+				font-size:30px;
+				color:red;
+				background:url(image/vjineng.png) no-repeat;
+				background-size:100%  100%;
+				text-align:center;
+				font-weight:bold;
+			}
+			#myhero #right #hero_border .one{
+				bottom:20px;
+				left:30px;
+			}
+			#myhero #right #hero_border .two{
+				bottom:20px;
+				left:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div  id="bg">
+			<div class="outer hero1">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="outer hero2">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="outer hero3">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="outer hero4">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="outer hero5">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="outer hero6">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="outer">
+			</div>
+			<div class="outer">
+			</div>
+			<div class="outer">
+			</div>
+			<div class="outer hero7">
+				<div id="inner">
+					<div id="identify">
+						<img src="image/vfan.png"/>
+					</div>
+					<div id="blood">
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+						<div>
+							<img src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div id="num">
+						4
+					</div>
+				</div>
+			</div>
+			<div id="space">
+			</div>
+			<div id="myhero">
+				<div id="left">
+				</div>
+				<div id="middle_card">
+					<div class="cardouter card1">
+						<div class="cardinner">
+							<div id="card_type">
+								<img src="image/vhongtao.png"/>
+							</div>
+							<div id="card_num">
+								2
+							</div>
+						</div>
+					</div>
+					<div class="cardouter card2">
+						<div class="cardinner">
+							<div id="card_type">
+								<img src="image/vhongtao.png"/>
+							</div>
+							<div id="card_num">
+								2
+							</div>
+						</div>
+					</div>
+					<div class="cardouter card3">
+						<div class="cardinner">
+							<div id="card_type">
+								<img src="image/vhongtao.png"/>
+							</div>
+							<div id="card_num">
+								2
+							</div>
+						</div>
+					</div>
+					<div class="cardouter card4">
+						<div class="cardinner">
+							<div id="card_type">
+								<img src="image/vhongtao.png"/>
+							</div>
+							<div id="card_num">
+								2
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="right">
+					<div id="hero_border">
+						<div id="hero_identity">
+							<img src="image/vzhu.png"/>
+						</div>
+						<div id="hero_blood">
+							<div>
+								<img src="image/vhongtao.png"/>
+							</div>
+							<div>
+								<img src="image/vhongtao.png"/>
+							</div>
+							<div>
+								<img src="image/vhongtao.png"/>
+							</div>
+						</div>
+						<div class="skill one">
+							急救
+						</div>
+						<div class="skill two">
+							倾囊
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
